@@ -66,3 +66,12 @@ related:
       weight: 100
     - name: categories
       weight: 70
+############################
+## SECURITY
+############################
+
+security:
+  funcs:
+    getenv: ['^HUGO_', '^CI$', '^WC_']  # allow Wowchemy env vars like WC_POST_CSS
+  exec:
+    allow: ['^(dart-)?sass(-embedded)?$', '^go$', '^npx$', '^postcss$']
