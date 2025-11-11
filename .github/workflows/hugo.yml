@@ -25,7 +25,25 @@ jobs:
           hugo-version: '0.124.1'
           extended: true
 
+      # Install Node & PostCSS tools required by the theme's asset pipeline
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install PostCSS tooling
+        run: |
+          npm install -g postcss postcss-cli autoprefixer
+
+      # Ensure Hugo modules (themes/plugins) are fetched
+      - name: Get Hugo modules
+        run: |
+          hugo mod get -u
+          hugo mod tidy
+
       - name: Build
+        env:
+          HUGO_ENV: production
         run: hugo --minify
 
       - name: Deploy to gh-pages
