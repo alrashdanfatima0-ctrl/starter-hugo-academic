@@ -1,7 +1,7 @@
 ---
 title: Fatima Alrashdan
 role: Postdoctoral Researcher at Rice University & Senior Engineer at Motif Neurotech
-avatar_filename: "avatar.jpg"
+avatar_filename: "Fatima_ECE.jpg"
 bio: ""
 interests:
   - Implantable Bioelectronics
