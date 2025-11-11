@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://alrashdanfatima0-ctrl.github.io/starter-hugo-academic/sitemap.xml
