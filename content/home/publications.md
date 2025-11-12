@@ -7,5 +7,4 @@ title: "Publications"
 active: true
 count: 5
 order: desc
-
-----
+---
